@@ -10,10 +10,10 @@
 void tricorn_init(t_fractal *f)
 {
     f->fractal_nb = 3;
-    f->x1 = -2.1;
-    f->x2 = 0.6;
-    f->y1 = -1.2;
-    f->y2 = 1.2;
+    f->x1 = -2.5;
+    f->x2 = 1;
+    f->y1 = -1;
+    f->y2 = 1;
     f->i_max = 100;
     // f->i_max = 50;
     //f->zoom = 100; pour 270*240

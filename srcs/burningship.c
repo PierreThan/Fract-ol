@@ -11,10 +11,10 @@
 void burningship_init(t_fractal *f)
 {
     f->fractal_nb = 4;
-    f->x1 = -2.1;
-    f->x2 = 0.6;
-    f->y1 = -1.2;
-    f->y2 = 1.2;
+    f->x1 = -2.5;
+    f->x2 = 1.5;
+    f->y1 = -1;
+    f->y2 = 2;
     f->i_max = 100;
     // f->i_max = 50;
     //f->zoom = 100; pour 270*240
@@ -67,6 +67,7 @@ void burningship_pthread(t_fractal *f)
         f_tab[n].pthread_nb = n;
         if (pthread_create(&t[n], NULL, burningship, &f_tab[n]))
         {
+            ft_printf("pthred_create problem.\n");
             exit(0);
         }
         n++;
