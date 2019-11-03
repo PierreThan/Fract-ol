@@ -12,10 +12,6 @@
 
 #include "../includes/fractol.h"
 
-// https://www.geeksforgeeks.org/multithreading-c-2/
-// https://openclassrooms.com/fr/courses/1513891-la-programmation-systeme-en-c-sous-unix/1514567-les-threads
-// https://stackoverflow.com/questions/1718465/optimal-number-of-threads-per-core
-
 void julia_init(t_fractal *f)
 {
     f->fractal_nb = 2;

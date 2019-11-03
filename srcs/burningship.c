@@ -12,12 +12,6 @@
 
 #include "fractol.h"
 
-// https://www.geeksforgeeks.org/multithreading-c-2/
-// https://openclassrooms.com/fr/courses/1513891-la-programmation-systeme-en-c-sous-unix/1514567-les-threads
-// https://stackoverflow.com/questions/1718465/optimal-number-of-threads-per-core
-// http://sdz.tdct.org/sdz/dessiner-la-fractale-de-burningship.html
-// https://franckh.developpez.com/tutoriels/posix/pthreads/
-
 void burningship_init(t_fractal *f)
 {
     f->fractal_nb = 4;

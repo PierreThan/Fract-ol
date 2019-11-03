@@ -12,12 +12,23 @@
 
 #include "fractol.h"
 
-int check_input(int ac, char **argv)
+int check_input2(int ac, char **argv)
 {
-    if (ac != 2)
+    if (ac < 2)
     {
         ft_printf("usage :\n\tmandelbrot\n\tjulia\n\ttricorn\n\tbunringship\n");
         return (-1);
+    }
+    if (ac >= 2)
+    {
+        if (ft_strequ(argv[1], "mandelbrot") || ft_strequ(argv[1], "julia") || ft_strequ(argv[1], "tricorn") || ft_strequ(argv[1], "burningship"))
+        {
+            if (ac == 3)
+            {
+                if (ft_strequ(argv[2], "mandelbrot") || ft_strequ(argv[2], "julia") || ft_strequ(argv[2], "tricorn") || ft_strequ(argv[2], "burningship"))
+                    return (0);
+            }
+        }
     }
     return (0);
 }
@@ -52,8 +63,9 @@ void draw(t_fractal *fractal)
         burningship_pthread(fractal);
 }
 
-int main(int ac, char **argv)
+int main2(int ac, char **argv)
 {
+    int n;
     t_fractal fractal;
     // t_fractal fractal[ac];
 
