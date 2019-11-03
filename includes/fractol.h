@@ -1,6 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fractol.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/08/06 16:18:47 by vbrazhni          #+#    #+#             */
+/*   Updated: 2018/08/06 16:18:49 by vbrazhni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef FRACTOL_H
 #define FRACTOL_H
+
+#include <pthread.h>
+#include <math.h>
+#include "key_macos.h"
 
 #define WIN_WIDTH 1200
 #define WIN_HEIGHT 900

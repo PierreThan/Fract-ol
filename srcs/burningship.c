@@ -1,6 +1,16 @@
-#include "pthread.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   burningship.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/08/06 16:18:47 by vbrazhni          #+#    #+#             */
+/*   Updated: 2018/08/06 16:18:49 by vbrazhni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
-#include <math.h>
 
 // https://www.geeksforgeeks.org/multithreading-c-2/
 // https://openclassrooms.com/fr/courses/1513891-la-programmation-systeme-en-c-sous-unix/1514567-les-threads

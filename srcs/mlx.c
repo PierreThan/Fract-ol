@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "fractol.h"
-#include "key_macos.h"
 
 void ft_display_window(t_mlx *mlx, char *title, int img_width, int img_height)
 {
